@@ -27,12 +27,17 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+# My settings
+LOGIN_URL = '/users/login/'
 
 # Application definition
 
 INSTALLED_APPS = [
     # My apps
     'learning_logs',
+    'users',
+    # Foreign apps
+    'bootstrap4',
     # Default apps
     'django.contrib.admin',
     'django.contrib.auth',
